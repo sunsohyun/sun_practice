@@ -32,12 +32,11 @@
 				<div class="selectricWrapper selectric-select">
 						<div class="selectricHideSelect">
 							<select name="" id="" class="select" tabindex="0">
-								<option value="">고속버스예매</option>
+								<option value="">KTX예매</option>
 								<option value="" selected="selected">예매확인</option>
 								<option value="">운행정보</option>
 								<option value="">이용안내</option>
 								<option value="">공지사항</option>
-								<option value="">고객센터</option>
 							</select>
 						</div>
 					<!-- <div class="selectric">
@@ -121,12 +120,12 @@
 									<td>1023041094</td>
 								</tr>
 								<tr>
-									<th>차량번호</th>
+									<th>열차번호</th>
 									<td>1023041094</td>
 								</tr>
 								<tr>
-									<th>승차홈</th>
-									<td>C</td>
+									<th>호차번호</th>
+									<td>C8</td>
 								</tr>
 								<tr>
 									<th>좌석</th>
