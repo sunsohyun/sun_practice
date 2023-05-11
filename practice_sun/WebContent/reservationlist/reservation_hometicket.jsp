@@ -20,19 +20,8 @@
 	</div>
 	<div class="ticketArea">
 			<img src="../../images/common/img_ticket.gif" alt="티켓" class="img_ticket">
-			<strong class="receipt_tit">고속버스 홈티켓</strong>
-			<div class="box_section sec01">
-				<ul>
-					<li>
-						<span class="txt_sml fl">출발일시</span>
-						<span class="txt_large16 fr">고속</span>
-					</li>
-					<li>
-						<span class="txt_large15 fl">2023.05.31(수) 09:40:00</span>
-						<span class="txt_sml fr">일반</span>
-					</li>
-				</ul>
-			</div>
+			<strong class="receipt_tit">KTX 홈티켓</strong>
+			
 			<div class="box_section sec02">
 				<span class="qrCode" id="qrcodeTable"><canvas width="76" height="76"></canvas></span>
 				<span class="qrCodeNum">20230508994694046<br>03230020</span>
@@ -40,16 +29,14 @@
 			<div class="box_section sec03">
 				<ul>
 					<li>
-						<span class="txt_large17">동서울</span>
-						<span class="txt_sml_333">DongSeoul</span>
+						<span class="txt_large17">서울</span>
 					</li>
 					<li>
-						<span class="txt_large17">대전복합</span>
-						<span class="txt_sml_333">Daejeon</span>
+						<span class="txt_large17">부산</span>
 					</li>
 				</ul>
 				<div class="desc01">
-					<span class="fl">동서울&nbsp;09:40:00발 / 대전복합행</span>
+					<span class="fl">동서울&nbsp;09:40:00발 / 부산행</span>
 					<span class="fr distance">166.7km</span>
 				</div>
 				<p class="desc02">
@@ -63,20 +50,20 @@
 			<div class="box_section sec04">
 				<ul>
 					<li>
-						<span class="txt_sml fl">출발시간<br>Time</span>
+						<span class="txt_sml fl">출발시간</span>
 						<span class="txt_large15 fr">09:40:00</span>
 					</li>
 					<li>
-						<span class="txt_sml fl">좌석<br>Seat NO.</span>
-						<span class="txt_large15 fr">20</span>
+						<span class="txt_sml fl">좌석</span>
+						<span class="txt_large15 fr">b5</span>
 					</li>
 					<li>
-						<span class="txt_sml fl">운송회사<br>Express Co</span>
-						<span class="txt_large15 fr">중앙</span>
+						<span class="txt_sml fl">열차번호</span>
+						<span class="">001</span>
 					</li>
 					<li>
-						<span class="txt_sml fl">승차홈<br>Platform</span>
-						<span class="txt_large15 fr">C</span>
+						<span class="txt_sml fl">호차</span>
+						<span class="txt_large15 fr">5</span>
 					</li>
 				</ul>
 			</div>
