@@ -5,90 +5,105 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="http://localhost:9000/practice_sun/css/reservationlist.css">
 </head>
 <body>
 	<!------------------------ 타이틀 ---------------------------->
-	<div class="title_wrap in_process checkTicketingT">
-		<div class="util">
-			<ul class="clfix">
-				<li class="login"><a href=""><span>로그인</span></a></li>
-				<li><a href="">회원가입</a></li>
-				<li><a href="">마이페이지</a></li>
-				<li><a href="">결제내역조회</a></li>
-				<li><a href="">사이트맵</a></li>
-			</ul>
+	<div class="title_wrap_checkTicketingT">
+		<div class="title_wrap">
+			<div class="util">
+				<ul class="clfix">
+					<li class="account">sohyun990502@naver.com</li>
+					<li class="logout"><a href="/mbrs/lgn/logoutMain.do"><span>로그아웃</span></a></li>
+					<li><a href="/mbrs/mbrspage/myPageMain.do">마이페이지</a></li>
+					<li><a href="/mbrs/trprinqr/pymPtInqr.do">결제내역조회</a></li>
+					<li><a href="/etc/sitemap/SiteMap.do">사이트맵</a></li>
+				</ul>
+			</div>
+			<!-- <a href="#" class="back">back</a>
+			<a href="#" class="mo_toggle">메뉴</a> -->
+			<h2>예매확인/취소/변경</h2>
 		</div>
-		<h2>예매확인/취소/변경</h2>
 	</div>
+	
 	<!------------------------ 메뉴바 ---------------------------->
-	<ul class="reservation_menu_list">
-		<li><a href="">HOME</a></li>
-		<li>
-			<div class="select-box">
-				<div class="selectricWrapper selectric-select">
+	<div class="breadcrumb">
+		<ul class="breadcrumb_list">
+			<li><a href="/main.do">HOME</a></li>
+			<li>
+				<div class="select-box">
+					<div class="selectricWrapper selectric-select">
 						<div class="selectricHideSelect">
 							<select name="" id="" class="select" tabindex="0">
-								<option value="">KTX예매</option>
-								<option value="" selected="selected">예매확인</option>
-								<option value="">운행정보</option>
-								<option value="">이용안내</option>
-								<option value="">공지사항</option>
+								<option value="/mrs/rotinf.do">고속버스예매</option>
+								<option value="/mrs/mrscfm.do" selected="selected">예매확인</option>
+								<option value="/oprninf/alcninqr/oprnAlcnPage.do">운행정보</option>
+								<option value="/adtnprdnew/frps/frpsPrchGd.do">고속버스 프리패스/정기권</option>
+								<option value="/ugd/mrsgd/Mrsgd.do">이용안내</option>
+								<option value="/cscn/ntcmttr/readNtcList.do">공지사항</option>
+								<option value="/cscn/qna/readQnaList.do">고객센터</option>
+								<option value="/ugd/bustrop/Bustrop.do">전국고속버스운송사업조합</option>
+								<option value="/ugd/trmlbizr/Trmlbizr.do">터미널사업자협회</option>
 							</select>
 						</div>
-					<!-- <div class="selectric">
-						<p class="label">예매확인</p>
-						<b class="button">▾</b>
-					</div>
-					<div class="selectricItems" tabindex="-1">
-						<div class="selectricScroll">
-							<ul>
-								<li class="">고속버스예매</li>
-								<li class="selected">예매확인</li>
-								<li class="">운행정보</li>
-								<li class="">이용안내</li>
-								<li class="">공지사항</li>
-								<li class="">고객센터</li>
-							</ul>
+						<!-- <div class="selectric">
+							<p class="label">예매확인</p>
+							<b class="button">▾</b>
+						</div> -->
+						<!-- <div class="selectricItems" tabindex="-1">
+							<div class="selectricScroll">
+								<ul>
+									<li class="">고속버스예매</li>
+									<li class="selected">예매확인</li>
+									<li class="">운행정보</li>
+									<li class="">고속버스 프리패스/정기권</li>
+									<li class="">이용안내</li>
+									<li class="">공지사항</li>
+									<li class="">고객센터</li>
+									<li class="">전국고속버스운송사업조합</li>
+									<li class="last">터미널사업자협회</li>
+								</ul>
+							</div>
 						</div>
-					</div> -->
-					<!-- <input class="selectricInput" tabindex="0"> -->
+						<input class="selectricInput" tabindex="0"> -->
+					</div>
 				</div>
-			</div>
-		</li>
-		
-		<!-- 예매확인 -->
-		<li>
-			<div class="select-box">
-				<div class="selectricWrapper selectric-select">
-					<div class="selectricHideSelect">
-						<select name="" id="" class="select" tabindex="0">
-							<option value="/mrs/mrscfmlgnchec.do" selected="selected">예매 확인/취소/변경</option>
-							<option value="/mrs/mrsrecplist.do">영수증 발행</option>
-						</select>
-					</div>
-					<!-- <div class="selectric">
-						<p class="label">예매 확인/취소/변경</p>
-						<b class="button">▾</b>
-					</div>
-					<div class="selectricItems" tabindex="-1" style="width: 141px;">
-						<div class="selectricScroll">
-							<ul>
-								<li class="selected">예매 확인/취소/변경</li>
-								<li class="last">영수증 발행</li>
-							</ul>
+			</li>
+			<!-- 예매확인 -->
+			<li>
+				<div class="select-box">
+					<div class="selectricWrapper selectric-select">
+						<div class="selectricHideSelect">
+							<select name="" id="" class="select" tabindex="0">
+								<option value="/mrs/mrscfm.do" selected="selected">예매 확인/취소/변경</option>
+								<option value="/mrs/mrsrecplist.do">영수증 발행</option>
+							</select>
 						</div>
-					</div> -->
-					<!-- <input class="selectricInput" tabindex="0"> -->
+						<!-- <div class="selectric">
+							<p class="label">예매 확인/취소/변경</p>
+							<b class="button">▾</b>
+						</div>
+							<div class="selectricItems" tabindex="-1">
+							<div class="selectricScroll">
+								<ul>
+									<li class="selected">예매 확인/취소/변경</li>
+									<li class="last">영수증 발행</li>
+								</ul>
+							</div>
+						</div>
+						<input class="selectricInput" tabindex="0"> -->
+					</div>
 				</div>
-			</div>
-		</li>
-	</ul>
+			</li>
+		</ul>
+	</div>
+
 	<!------------------------ 예매내역/취소내역 버튼 ---------------------------->
 	<div>
 		<ul>
 			<li>
 				<a  href="#reservationList" id="reservationList">예매내역</a>
-				<a  href= "#cancelList" id="cancelList">취소내역</a>
+				<a  href="#cancelList" id="cancelList">취소내역</a>
 			</li>
 		</ul>
 	</div>
