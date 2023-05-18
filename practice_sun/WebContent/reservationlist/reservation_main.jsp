@@ -97,141 +97,141 @@
 			</li>
 		</ul>
 	</div>
-
-	<!------------------------ 예매내역/취소내역 버튼 ---------------------------->
-	<div>
-		<ul>
-			<li>
-				<a  href="#reservationList" id="reservationList">예매내역</a>
-				<a  href="#cancelList" id="cancelList">취소내역</a>
-			</li>
+	<!------------------------ 예매확인하기 ---------------------------->
+	<div class="page">
+	<div class="tab_type1">
+		<!------------------------ 예매내역/취소내역 버튼 ---------------------------->
+		<ul class="tabs">
+			<li class="active"><a href="" onclick="">예매내역</a></li>
+			<li><a href="" onclick="">취소내역</a></li>
 		</ul>
-	</div>
+			
 		<!------------------------ 예매내역 ---------------------------->
-		<section class="detail_info_wrap homeTicket marT30 ">
-					                        	     
-			<div class="box_detail_info">
-				<div class="routeHead">
-					<p class="date">2023. 05. 31 (수) 09:40 출발</p>
-					<p class="ticketPrice">총 결제금액
-									<span class="price">11,800원</span>
-									<span class="txt_div">(카드)</span>
-					</p>
-				</div>
-				<div class="routeBody">
-					<div class="routeArea route_wrap">
-						<div class="inner">
-							<span class="roundBox departure">동서울</span>
-							<span class="roundBox arrive">대전복합</span>
-						</div>
-						<div class="detail_info">
-							<span>2시간 0분 소요</span> <!-- 예상소요시간 -->
-						</div>
+			<section class="detail_info_wrap homeTicket marT30 ">
+						                        	     
+				<div class="box_detail_info">
+					<div class="routeHead">
+						<p class="date">2023. 05. 31 (수) 09:40 출발</p>
+						<p class="ticketPrice">총 결제금액
+										<span class="price">11,800원</span>
+										<span class="txt_div">(카드)</span>
+						</p>
 					</div>
-					<div class="routeArea route_wrap mob_route">
-						<div class="tbl_type2">
-							<table class="tbl_info">
-								<!-- <caption>
-									<strong>버스 정보</strong>
-									<p>고속사, 등급, 출발</p>
-								</caption> -->
-								<colgroup>
-									<col style="width:68px;">
-									<col style="width:*;">
-								</colgroup>
-								<tbody>
-									<tr>
-										<th scope="row">예매번호</th>
-										<td>20230508709439</td>
-									</tr>
-									<tr>
-										<th scope="row">차량</th>
-										<td>
-											ktx<span class="jabus ico_bus"></span>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">등급</th>
-										<td>고속</td>
-									</tr>
-									<tr>
-										<th scope="row">호차</th>
-										<td>C</td>
-									</tr>
-									<tr>
-										<th scope="row">매수</th>
-										<td>일반1명 </td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 좌석상세내역 -->
-			<!-- 전체검표완료 시 class="check_com" 추가-->
-			<div class="seat_detail">
-				<ul>
-					<form id="mrsCfmDtllistFrm30508994694046" name="mrsCfmDtllistFrm30508994694046" action="/mrs/mrsrehtckpub.do">
-						<input type="hidden" name="nonMbrsNo" value="">					<!-- 비회원 회원번호 -->
-						
-						<input type="hidden" name="tckNo" value="20230508994694046">
-						<input type="hidden" name="tckKndCd" value="1">					<!-- 티켓종류코드(일반,초등)-->
-						<input type="hidden" name="satsNo" value="20">					<!-- 좌석 -->
-						<input type="hidden" name="mrsMrnpNo" value="20230508709439">	<!-- 예매번호 -->
-						<input type="hidden" name="mrsMrnpSno" value="01">				<!-- 예매일련번호 -->
-						<input type="hidden" name="alcnDeprDt" value="2023. 05. 31 (수)"><!-- 출발일 -->
-						<input type="hidden" name="alcnDeprTime" value="09:40">			<!-- 출발시간 -->
-						<input type="hidden" name="deprnNm" value="동서울">				<!-- 출발지 -->
-						<input type="hidden" name="arvlNm" value="대전복합">				<!-- 도착지 -->
-						<input type="hidden" name="takeDrtm" value="2시간 0분">			<!-- 소요시간 -->
-						<input type="hidden" name="cacmCd" value="">					<!-- 고속사코드 -->
-						<input type="hidden" name="cacmNm" value="(주)중앙고속">			<!-- 고속사명 -->
-						<input type="hidden" name="cacmCss" value="jabus">				<!-- 고속사CSS -->
-						<input type="hidden" name="deprNm" value="고속">					<!-- 등급 -->
-						<input type="hidden" name="adltNum" value="">					<!-- 일반매수 -->
-						<input type="hidden" name="chldNum" value="">					<!-- 초등매수 -->
-						<input type="hidden" name="prmmDcDvsCd" value="">				<!-- 우등형할인코드 -->
-						<input type="hidden" name="pynDvsCd" value="2">					<!-- 지불구분코드 -->
-						<input type="hidden" name="pynDtlCd" value="1">					<!-- 지불상세코드 -->
-						<input type="hidden" name="payNm" value="카드">					<!-- 결제 수단 -->
-						
-						<!-- 검표상태에 따른 div 설정 -->
-							
-						<li class="" style="border-top: none;"> <!-- 부분검표완료 시 li tag에 check_com 추가 -->
-							<span class="seat">좌석</span>
-							<span class="seatNum">20</span>
-	<!-- 							<span class="txt_blue">일반</span> -->
-	<!-- 							<span class="txt_blue">초등생</span> -->
-							<span class="txt_blue">일반</span>
-							<span class="box_ticketNum">
-								<span class="ticketNum">20230508-994-69-4046</span>
-								<span class="ticketNum2">03230020</span>
-							</span>
-							<div class="btnBox">
-								<button type="button" onclick="fnmrsReHtckPub('30508994694046')" class="btnS btn_print">홈티켓 출력</button>
+					<div class="routeBody">
+						<div class="routeArea route_wrap">
+							<div class="inner">
+								<span class="roundBox departure">동서울</span>
+								<span class="roundBox arrive">대전복합</span>
 							</div>
-						</li>
-					</form>
+							<div class="detail_info">
+								<span>2시간 0분 소요</span> <!-- 예상소요시간 -->
+							</div>
+						</div>
+						<div class="routeArea route_wrap mob_route">
+							<div class="tbl_type2">
+								<table class="tbl_info">
+									<!-- <caption>
+										<strong>버스 정보</strong>
+										<p>고속사, 등급, 출발</p>
+									</caption> -->
+									<colgroup>
+										<col style="width:68px;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">예매번호</th>
+											<td>20230508709439</td>
+										</tr>
+										<tr>
+											<th scope="row">차량</th>
+											<td>
+												ktx<span class="jabus ico_bus"></span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">등급</th>
+											<td>고속</td>
+										</tr>
+										<tr>
+											<th scope="row">호차</th>
+											<td>C</td>
+										</tr>
+										<tr>
+											<th scope="row">매수</th>
+											<td>일반1명 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 좌석상세내역 -->
+				<!-- 전체검표완료 시 class="check_com" 추가-->
+				<div class="seat_detail">
+					<ul>
+						<form id="mrsCfmDtllistFrm30508994694046" name="mrsCfmDtllistFrm30508994694046" action="/mrs/mrsrehtckpub.do">
+							<input type="hidden" name="nonMbrsNo" value="">					<!-- 비회원 회원번호 -->
+							
+							<input type="hidden" name="tckNo" value="20230508994694046">
+							<input type="hidden" name="tckKndCd" value="1">					<!-- 티켓종류코드(일반,초등)-->
+							<input type="hidden" name="satsNo" value="20">					<!-- 좌석 -->
+							<input type="hidden" name="mrsMrnpNo" value="20230508709439">	<!-- 예매번호 -->
+							<input type="hidden" name="mrsMrnpSno" value="01">				<!-- 예매일련번호 -->
+							<input type="hidden" name="alcnDeprDt" value="2023. 05. 31 (수)"><!-- 출발일 -->
+							<input type="hidden" name="alcnDeprTime" value="09:40">			<!-- 출발시간 -->
+							<input type="hidden" name="deprnNm" value="동서울">				<!-- 출발지 -->
+							<input type="hidden" name="arvlNm" value="대전복합">				<!-- 도착지 -->
+							<input type="hidden" name="takeDrtm" value="2시간 0분">			<!-- 소요시간 -->
+							<input type="hidden" name="cacmCd" value="">					<!-- 고속사코드 -->
+							<input type="hidden" name="cacmNm" value="(주)중앙고속">			<!-- 고속사명 -->
+							<input type="hidden" name="cacmCss" value="jabus">				<!-- 고속사CSS -->
+							<input type="hidden" name="deprNm" value="고속">					<!-- 등급 -->
+							<input type="hidden" name="adltNum" value="">					<!-- 일반매수 -->
+							<input type="hidden" name="chldNum" value="">					<!-- 초등매수 -->
+							<input type="hidden" name="prmmDcDvsCd" value="">				<!-- 우등형할인코드 -->
+							<input type="hidden" name="pynDvsCd" value="2">					<!-- 지불구분코드 -->
+							<input type="hidden" name="pynDtlCd" value="1">					<!-- 지불상세코드 -->
+							<input type="hidden" name="payNm" value="카드">					<!-- 결제 수단 -->
+							
+							<!-- 검표상태에 따른 div 설정 -->
+								
+							<li class="" style="border-top: none;"> <!-- 부분검표완료 시 li tag에 check_com 추가 -->
+								<span class="seat">좌석</span>
+								<span class="seatNum">20</span>
+		<!-- 							<span class="txt_blue">일반</span> -->
+		<!-- 							<span class="txt_blue">초등생</span> -->
+								<span class="txt_blue">일반</span>
+								<span class="box_ticketNum">
+									<span class="ticketNum">20230508-994-69-4046</span>
+									<span class="ticketNum2">03230020</span>
+								</span>
+								<div class="btnBox">
+									<!-- <button type="button" onclick="fnmrsReHtckPub('30508994694046')" class="btnS btn_print">홈티켓 출력</button> -->
+								</div>
+							</li>
+						</form>
+					</ul>
+				</div>
+				<p class="btns multi clfix col4">
+					<a href="#" onclick="fnmrsChangeTime(0);" class="btnL btn_cancel">시간변경</a>
+					<a href="#" onclick="fnmrsRecpPub(0);" class="btnL btn_cancel">영수증 발행</a>
+					<a href="#" onclick="fnRecpCanInfo(0,'');" class="btnL btn_cancel">예매취소</a>
+					<a href="#" onclick="fnmrsHtcklayer(0);" class="btnL btn_confirm">홈티켓 발행</a>
+				</p>
+				<ul class="desc_list marT30">
+					<li>과거 예매 내역은 출발일 날짜 기준 당일까지, 예매 취소 내역은 과거 3개월까지 조회 가능합니다.</li>
+					<li><strong class="txt_puple">홈티켓으로 발권된 내역은 변경이 불가</strong>하니 변경을 원하시면 취소 후 다시 예매를 진행하시기 바랍니다.</li>
+					<li>신용카드 예매 취소 또는 변경 시 일주일 내로 예매했던 카드로 청구 취소 처리가 되면서 반환됩니다.</li>
+					<li><strong class="txt_puple">시간변경은 취소 위약금을 부과하지 않습니다.</strong></li>
 				</ul>
-			</div>
-			<p class="btns multi clfix col3">
-				<a href="#" onclick="fnmrsRecpPub(0);" class="btnL btn_cancel first">영수증 발행</a>
-				<a href="#" onclick="fnRecpCanInfo(0,'');" class="btnL btn_update">예매변경</a>
-				<a href="#" onclick="fnRecpCanInfo(0,'');" class="btnL btn_cancel">예매취소</a>
-				<a href="#" onclick="fnmrsReHtckPub('30508994694046')" class="btnL btn_confirm last">홈티켓 출력</a>
-			</p>
-			<ul class="desc_list marT30">
-				<li>과거 예매 내역은 출발일 날짜 기준 당일까지, 예매 취소 내역은 과거 3개월까지 조회 가능합니다.</li>
-				<li><strong class="txt_puple">홈티켓으로 발권된 내역은 변경이 불가</strong>하니 변경을 원하시면 취소 후 다시 예매를 진행하시기 바랍니다.</li>
-				<li>신용카드 예매 취소 또는 변경 시 일주일 내로 예매했던 카드로 청구 취소 처리가 되면서 반환됩니다.</li>
-				<li><strong class="txt_puple">시간변경은 취소 위약금을 부과하지 않습니다.</strong></li>
-			</ul>
-		</section>
-											
+			</section>
+		</div>	
+	</div>								
 	<!------------------------ 취소내역 ---------------------------->
-	<div>	
-		<div class="tab_conts" style="display: block;">
+	<div style="display: none;">	<!-- display:none은 jquery에서 추가로 바꾸기 -->
+		<div class="tab_conts">
 					
 			<section class="detail_info_wrap homeTicket marT30">
 											
@@ -292,7 +292,7 @@
 		</ul>
 	</div>
 	<!------------------------ 취소버튼 클릭시 나오는 팝업창 ---------------------------->
-	<div class="remodal w680 popTicket_cancel remodal-is-initialized remodal-is-opened" id="popTicketCancel" role="dialog" tabindex="-1">
+	<div style="display: none; class="remodal w680 popTicket_cancel remodal-is-initialized remodal-is-opened" id="popTicketCancel" role="dialog" tabindex="-1">
 	<form id="mrsRecpCanFrm" name="mrsRecpCanFrm" action="/mrs/mrstckcaninfo.ajax">
 		<input type="hidden" name="nonMbrsNo" id="nonMbrsNo" value="">
 		<input type="hidden" name="mrsMrnpNo" id="mrsMrnpNo" value="20230508709439">
