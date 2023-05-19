@@ -8,7 +8,10 @@
 <link rel="stylesheet" href="http://localhost:9000/practice_sun/css/reservationlist.css">
 </head>
 <body>
+<div>
+	<jsp:include page="/gnb.jsp"></jsp:include>
 	<!------------------------ 타이틀 ---------------------------->
+	<div id="contentWrap">
 	<div class="title_wrap_checkTicketingT">
 		<div class="title_wrap">
 			<div class="util">
@@ -214,9 +217,9 @@
 						</form>
 					</ul>
 				</div>
-				<p class="btns multi clfix col4">
+				<p class="btns multi mainclfix col4">
 					<a href="#" onclick="fnmrsChangeTime(0);" class="btnL btn_cancel">시간변경</a>
-					<a href="#" onclick="fnmrsRecpPub(0);" class="btnL btn_cancel">영수증 발행</a>
+					<a href="http://localhost:9000/practice_sun/reservationlist/reservation_receipt.jsp" target="_blank" onclick="fnmrsRecpPub(0);" class="btnL btn_cancel">영수증 발행</a>
 					<a href="#" onclick="fnRecpCanInfo(0,'');" class="btnL btn_cancel">예매취소</a>
 					<a href="#" onclick="fnmrsHtcklayer(0);" class="btnL btn_confirm">홈티켓 발행</a>
 				</p>
@@ -228,7 +231,9 @@
 				</ul>
 			</section>
 		</div>	
-	</div>								
+	</div>
+</div>
+</div>						
 	<!------------------------ 취소내역 ---------------------------->
 	<div style="display: none;">	<!-- display:none은 jquery에서 추가로 바꾸기 -->
 		<div class="tab_conts">

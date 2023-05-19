@@ -2,9 +2,17 @@
 	commons style sheet
 ******************************/
 
+#contentWrap {
+    left: 220px;
+    width: calc(100% - 220px);
+    min-width: 708px;
+    position: absolute;
+    top: 0;
+}
+
 /* 예매확인 상단 비쥬얼 */
 .title_wrap_checkTicketingT { 
-	background: url(http://localhost:9000/practice_sun/images/visual_chkTicket_bg.jpg) center 0 no-repeat; 
+	background: url(http://localhost:9000/practice_sun/images/page/visual_route_bg.jpg) center 0 no-repeat; 
 	background-size: cover;
 }
 
@@ -19,9 +27,13 @@
     position: absolute;
     top: 10px;
     right: 30px;
+    
 }
 
-/* 예매확인 컨텐츠*/
+/*************************************
+			   예매확인 컨텐츠
+			       
+*************************************/
 body, input, select, div, textarea, table, button {
     font-size: 12px;
     color: #666;
@@ -120,8 +132,10 @@ ul, ol {
 }
 
 
-/* 메뉴바 */
-
+/*************************************
+			       메뉴바
+			       
+*************************************/
 
 .breadcrumb {
     background: #fff;
@@ -211,8 +225,11 @@ body, p, h1, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, thead, tbody, tr, th
     letter-spacing: -0.03em;
 }
 
-/* 예매내역 */
 
+/*************************************
+			       예매내역
+			       
+*************************************/
 
 .page {
     width: 960px;
@@ -255,7 +272,10 @@ body, p, h1, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, thead, tbody, tr, th
 	
 
 
-/*예매/취소내역 버튼*/
+/*******************************
+		예매/취소내역 버튼
+		
+********************************/
 .tab_type1 .tabs {
     position: relative;
     border: 1px solid #e6e6e6;
@@ -315,8 +335,11 @@ body, p, h1, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, thead, tbody, tr, th
     /* margin: 0 0 1px 7px; */
 }
 
+/*******************************
+		예매내역 세부사항 박스
+		
+********************************/
 
-/* 예매내역 세부사항 박스 */
 
 .detail_info_wrap {
     position: relative;
@@ -457,7 +480,7 @@ section {
 .clfix {
     display: block;
 }
-.clfix {
+.mainclfix {
     display: inline-block;
 }
 .clfix:after {
@@ -519,25 +542,220 @@ section {
 
 
 
+/*********************************
+			영수증 출력
+
+**********************************/
+
+.print_wrap .print_head {
+    padding-bottom: 20px;
+    text-align: left;
+}
+.print_head {
+    position: relative;
+    height: 90px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.print_wrap {
+    width: 595px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0;
+}
+.print_head .desc_list li {
+    font-size: 13px;
+    color: #666;
+}
+.desc_list li, p.bul {
+    padding-left: 8px;
+    text-indent: -8px;
+}
+.desc_list li:before, p.bul:before {
+    display: inline-block;
+    content: '';
+    background: #919191;
+    width: 2px;
+    height: 2px;
+    margin: 0 6px 3px 0;
+}
+.print_head .desc_list {
+    width: 405px;
+}
+
+.print_head .btnBox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 90px;
+    height: 90px;
+}
+
+.print_wrap .print_head .bg_line01 {
+    top: auto !important;
+    bottom: 0 !important;
+}
+.bg_line01 {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 100%;
+    height: 1px;
+    vertical-align: top;
+}
+
+.print {
+	border:none;
+}
+
+/* 영수증 */
+.receiptWrap {position:relative; display:inline-block; width:320px; padding:20px; box-sizing:border-box; text-align:left;}
+.head_top {position:relative; margin-bottom:10px; padding-bottom:10px; border-bottom:2px solid #000;}
+.head_top .logo img { width: 50%; height: auto;}
+.head_top span.url {position:absolute; right:0; top:0; font-size:12px; letter-spacing:0;}
+.head_top .tit_receipt {margin-top:20px; font-size:24px; font-weight:bold; color:#000; line-height:1.2; padding:4px 0;} 181206 수정
+.head_top .tit_receipt span {display:inline-block; padding-left:10px; font-size:15px; color:#000; font-weight:normal; vertical-align:bottom;}
+.box_dot ul li,.box_row ul li {position:relative; margin-top:5px; font-size:13px; color:#000;}
+.box_dot ul li:after,.box_row ul li:after {display:block; content:""; clear:both;}
+.box_dot ul li:first-child,.box_row ul li:first-child {margin-top:0;}
+.box_dot ul li .taR,.box_row ul li .taR {text-align:right; vertical-align:middle;}
+.box_dot ul li .fr,.box_row ul li .fr {float:right;}
+.box_dot ul li.txt_strong {font-size:18px; font-weight:bold;}
+.bg_dashed {display:block; width:100%; height:4px; padding:10px 0; overflow:hidden;}
+.bg_dashed img {display:block;}
+.txt_title_receipt {display:block; margin-bottom:5px; font-size:15px; color:#000; font-weight:bold;}
+
+/* 영수증발행 */
+.receipt_wrap {position:relative; padding:9px; border-left:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; border-right:1px solid #e6e6e6;}
+.receipt_wrap .date:after {display:block; content:""; clear:both;}
+.receipt_wrap .date li {position:relative; float:left; width:calc(50% - 4px); height:84px; margin-left:8px; background-color:#f3f4f6; box-sizing:border-box;}
+.receipt_wrap .date li .inner {padding:12px 15px;}
+.receipt_wrap .date li:first-child {margin-left:0;}
+.receipt_wrap .date li .name {display: block; font-size: 14px; color: #333;}
+.receipt_wrap .text .text_date {display:block; height: 100%; padding: 0; font-size: 24px; color: #000;}
+.receipt_wrap .text input {position:absolute; left:-9999px; top:-0; width:1px !important; height:1px !important; padding: 0; font-size:0; color: #000; border:none; background:transparent; opacity:0;}
+.label_tag:after { display: inline-block; content: ''; position: absolute; right: 0; bottom: 0; background: url(/images/page/input_after.png) 0 0 no-repeat; background-size: 100%; width: 8px; height: 8px;}
+
+.receipt_wrap .date li .box_inputForm strong {margin-bottom:8px; font-size:14px; color:#333; font-weight:normal;}
+.receipt_wrap .date li .box_inputForm {padding:12px 15px;}
+.receipt_wrap .date li .box_inputForm.card_num .box_label + .box_label label {padding-left:25px;}
+
+.receipt_wrap.route_box {margin-top:0; border-top:none; box-sizing:border-box;}
+.receipt_wrap.route_box .tab_cont {padding:0;}
+.receipt_wrap.route_box .date li {height:112px;}
+
+ul.compareBox {overflow:hidden; width:100%; margin-top:8px;}
+ul.compareBox li {position:relative; float:left; width:calc(50% - 4px); height:84px; margin-left:8px; background-color:#f3f4f6; box-sizing:border-box;}
+ul.compareBox li:first-child {margin-left:0;}
+ul.compareBox li .name {display: block; font-size: 14px; color: #333;}
+ul.compareBox li .box_inputForm {height:100%; padding:12px 15px; box-sizing:border-box;}
+ul.compareBox li .box_inputForm strong {margin-bottom:8px;}
+ul.compareBox li .box_inputForm.card_num .box_label + .box_label label {padding-left:25px;}
+
+/*********************************
+			 예매 변경
+
+**********************************/
+.page .update {
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+}
+
+.change_wrap {
+    margin-top: 25px;
+    border-top: 1px solid #e6e6e6;
+}
+.payment_input, .custom_input {
+    margin-top: 5px;
+}
+
+.change_wrap .date {
+    margin: 10px 20px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.change_wrap .route_select {
+    border-left: 1px solid #e6e6e6;
+}
+.change_wrap .routeArea {
+    padding: 8px;
+}
+.change_wrap .inselect {
+    padding: 18px 0;
+}
+.box_inputForm, .secondbox_inputForm {
+    position: relative;
+    padding: 7px 12px;
+    background-color: #f3f4f6;
+    text-align: left;
+}
+.box_inputForm.inselect strong, .secondbox_inputForm strong {
+    margin-left: 12px;
+}
+.box_inputForm strong, .secondbox_inputForm strong {
+    display: block;
+}
+
+strong {
+    font-weight: bold;
+}
+.box_inputForm.inselect .select-box {
+    padding: 0 !important;
+}
+
+.payment.select-box {
+    margin: 6px 0;
+    padding: 0 !important;
+}
+
+.payment.select-box .selectricWrapper {
+    padding: 0;
+}
+
+.payment.select-box select {
+    font-size: 16px;
+}
+
+.payment.select-box select {
+    width: 100%;
+    height: 28px;
+}
+
+.selectric {
+    position: relative;
+    height: 100%;
+}
+
+.payment.select-box .label.add {
+    color: #000;
+}
+
+.payment.select-box .selectric .label {
+    padding-left: 12px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.update {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.secondbox_inputForm {
+	margin-top:8px;
+}
 
 
 
 
-
-
-
-
-/* 취소수수료안내 팝업 */
-.pop_fee .btns { margin-top: 0; padding-top: 0; border-top: none;}
-
-
-/* 배차조회 */
-.buscheck_wrap { margin-top: 25px;}
-.buscheck_wrap .detailBox { height: 640px; min-height: 640px;}
-.buscheck_wrap .infoBox {min-height:640px;}
-.search_result .route_wrap .roundBox { overflow: inherit;}
-
-.buscheck_wrap .infoBox { position: relative; }
 .btn_price { display: none;}
 .price_info {margin-top:10px; padding: 0 20px 20px 20px;}
 .price_info * { color: #fff;}
@@ -607,6 +825,7 @@ section {
 .bus_time .premium a:after, .bus_time .premium2 a:after { display: inline-block; content: ''; position: absolute; right: 0; bottom: 0; background: url(/images/page/label_premium_on.png) 0 0 no-repeat; background-size: 100%; width: 40px; height: 40px;}
 
 
+
 /* 매수 및 좌석선택(시간변경)*/
 .change_time .sel_list .btn_wrap { display: none;}
 
@@ -622,7 +841,6 @@ section {
 .box_detail_info:first-child {margin-top:0;}
 .box_detail_info:before {display:block; content:""; position:absolute; left:50%; top:0; width:1px; height:100%; background-color:#e6e6e6;}
 .box_detail_info:after {display:block; content:""; clear:both;}
-.routeArea {position:relative; float:left; width:50%; padding:20px 0; box-sizing:border-box;}
 .routeArea.full { width: 100%;}
 .routeArea.route_wrap {border-bottom:none;}
 .routeArea.route_wrap .roundBox { margin: 20px 0 0; color:#000;}
@@ -649,8 +867,6 @@ section {
 .routeHead .date {float:left; font-size:15px; color:#000; font-weight:bold; line-height:40px;}
 .routeHead .ticketNum {float:right; padding-right:20px; font-size:12px; color:#999; line-height:40px;}
 .routeHead .ticketNum span {padding-left:10px; font-size:14px; color:#000; vertical-align:top;}
-.routeBody {border:1px solid #e6e6e6; border-top:none;}
-.routeBody:after {display:block; content:""; clear:both;}
 
 .bgGray {background-color:#f3f4f6;}
 .box_detail_info.bgGray:before {background-color:#fff;}
@@ -664,19 +880,6 @@ section {
 
 
 /* 180502 추가 */
-.newMobileTicket .ticketInfo {padding:20px;overflow:hidden;background-color: #5691BD}
-.newMobileTicket .ticketInfo span {vertical-align: middle;font-size:15px;color:#fff;}
-.newMobileTicket .ticketInfo span.desc {font-size:12px}
-.newMobileTicket .ticketInfo .type {float: left}
-.newMobileTicket .ticketInfo .type .mobile:before {content:'';display:inline-block;margin-right:10px;width:14px; height:14px; background:url(/images/common/ico_mobile_ticket.png) 0 0 no-repeat; background-size:100% auto;}
-.newMobileTicket .ticketInfo .type .mobile {margin-right:13px;font-size:17px}
-.newMobileTicket .ticketInfo .type .desc {color:#b7d9f3}
-.newMobileTicket .ticketInfo .typeDetail {float: right}
-.newMobileTicket .ticketInfo .typeDetail .desc:before {content:'｜';margin-right:15px;color:#b7d9f3}
-.newMobileTicket .ticketInfo .typeDetail .desc {margin-left:14px;padding-right:7px;}
-.newMobileTicket .box_detail_info {margin-top:0}
-.newMobileTicket .box_detail_info .routeHead .date {padding-left:20px}
-.newMobileTicket .box_detail_info .routeHead .ticketPrice .price {padding-right:0}
 
 
 .detail_info_wrap .routeHead.reHead {background-color:#dee2ea;}
@@ -710,68 +913,14 @@ section {
 .desc_list .btn {margin-left:20px;}
 .mobBlock {display:none;}
 
-/* 영수증발행 */
-.receipt_wrap {position:relative; padding:9px; border-left:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; border-right:1px solid #e6e6e6;}
-.receipt_wrap .date:after {display:block; content:""; clear:both;}
-.receipt_wrap .date li {position:relative; float:left; width:calc(50% - 4px); height:84px; margin-left:8px; background-color:#f3f4f6; box-sizing:border-box;}
-.receipt_wrap .date li .inner {padding:12px 15px;}
-.receipt_wrap .date li:first-child {margin-left:0;}
-.receipt_wrap .date li .name {display: block; font-size: 14px; color: #333;}
-.receipt_wrap .text .text_date {display:block; height: 100%; padding: 0; font-size: 24px; color: #000;}
-.receipt_wrap .text input {position:absolute; left:-9999px; top:-0; width:1px !important; height:1px !important; padding: 0; font-size:0; color: #000; border:none; background:transparent; opacity:0;}
-.label_tag:after { display: inline-block; content: ''; position: absolute; right: 0; bottom: 0; background: url(/images/page/input_after.png) 0 0 no-repeat; background-size: 100%; width: 8px; height: 8px;}
 
-.receipt_wrap .date li .box_inputForm strong {margin-bottom:8px; font-size:14px; color:#333; font-weight:normal;}
-.receipt_wrap .date li .box_inputForm {padding:12px 15px;}
-.receipt_wrap .date li .box_inputForm.card_num .box_label + .box_label label {padding-left:25px;}
 
-.receipt_wrap.route_box {margin-top:0; border-top:none; box-sizing:border-box;}
-.receipt_wrap.route_box .tab_cont {padding:0;}
-.receipt_wrap.route_box .date li {height:112px;}
-
-ul.compareBox {overflow:hidden; width:100%; margin-top:8px;}
-ul.compareBox li {position:relative; float:left; width:calc(50% - 4px); height:84px; margin-left:8px; background-color:#f3f4f6; box-sizing:border-box;}
-ul.compareBox li:first-child {margin-left:0;}
-ul.compareBox li .name {display: block; font-size: 14px; color: #333;}
-ul.compareBox li .box_inputForm {height:100%; padding:12px 15px; box-sizing:border-box;}
-ul.compareBox li .box_inputForm strong {margin-bottom:8px;}
-ul.compareBox li .box_inputForm.card_num .box_label + .box_label label {padding-left:25px;}
-
-/* 영수증 */
-.receiptWrap {position:relative; display:inline-block; width:320px; padding:20px; box-sizing:border-box; text-align:left;}
-.head_top {position:relative; margin-bottom:10px; padding-bottom:10px; border-bottom:2px solid #000;}
-.head_top .logo img { width: 50%; height: auto;}
-.head_top span.url {position:absolute; right:0; top:0; font-size:12px; letter-spacing:0;}
-.head_top .tit_receipt {margin-top:20px; font-size:24px; font-weight:bold; color:#000; line-height:1.2; padding:4px 0;} /* 181206 수정 */
-.head_top .tit_receipt span {display:inline-block; padding-left:10px; font-size:15px; color:#000; font-weight:normal; vertical-align:bottom;}
-.box_dot ul li,.box_row ul li {position:relative; margin-top:5px; font-size:13px; color:#000;}
-.box_dot ul li:after,.box_row ul li:after {display:block; content:""; clear:both;}
-.box_dot ul li:first-child,.box_row ul li:first-child {margin-top:0;}
-.box_dot ul li .taR,.box_row ul li .taR {text-align:right; vertical-align:middle;}
-.box_dot ul li .fr,.box_row ul li .fr {float:right;}
-.box_dot ul li.txt_strong {font-size:18px; font-weight:bold;}
-.bg_dashed {display:block; width:100%; height:4px; padding:10px 0; overflow:hidden;}
-.bg_dashed img {display:block;}
-.txt_title_receipt {display:block; margin-bottom:5px; font-size:15px; color:#000; font-weight:bold;}
 
 
 /* 고속버스 홈티켓 발행 팝업 */
 .pop_ticket .btns {  margin-top: 0; padding-top: 0; border-top: none;}
 
-/* 시간/등급 변경 */
-.change_wrap { margin-top: 25px; border-top: 1px solid #e6e6e6;}
-.change_wrap .routeArea { padding: 8px; }
-.change_wrap .route_select { border-left: 1px solid #e6e6e6;}
-.change_wrap .date { margin: 10px 20px 10px; font-size: 15px; font-weight: bold; color: #000;}
-.change_wrap .date span { margin-right: 5px; color: #5691bd;}
-.change_wrap .inselect { padding: 18px 0;}
-.ticket_info { margin-top: 10px; font-size: 14px;}
-.ticket_info p { font-size: 14px;}
-.ticket_info .noti { font-size: 15px;}
-.change_info {  margin-top: 8px; border: 1px solid #e6e6e6; border-left: none; -moz-box-sizing: border-box; box-sizing: border-box;}
-.change_info .info_box { float: left; width: 50%; padding: 15px 20px; border-left: 1px solid #e6e6e6; -moz-box-sizing: border-box; box-sizing: border-box;}
-.change_info .name { color: #999;}
-.change_info .sum { margin-top: -20px; font-size: 17px; color: #000; text-align: right;}
+
 
 
 /* 구매내역확인 */
@@ -791,7 +940,7 @@ span.txt_period.txt_red {color:#e64c2e;}
 .txt_large16 {font-size:16px; color:#000; font-weight:bold;}
 .txt_large17 {font-size:17px; color:#000; font-weight:bold;}
 
-.homeTicket_wrap,.passTicket_wrap {width:595px; padding:20px 0;}
+/* .homeTicket_wrap,.passTicket_wrap {width:595px; padding:20px 0;}
 .homeTicket_wrap .print_body .ticketArea {height:589px;}
 .homeTicket_wrap .print_body .sec01 {margin-top:12px;}
 .homeTicket_wrap .print_body .sec01 ul li {overflow:hidden; height:22px;} 
@@ -817,7 +966,7 @@ span.txt_period.txt_red {color:#e64c2e;}
 
 .homeTicket_wrap .print_head .desc_list br { display: none;}
 .homeTicket_wrap .box_section.sec01 .txt_sml.fl { position: relative; top: 3px;}
-.homeTicket_wrap .box_section.sec01 .txt_large15.fl { position: relative; top: -5px; font-size: 15px; font-weight: bold; color: #000;}
+.homeTicket_wrap .box_section.sec01 .txt_large15.fl { position: relative; top: -5px; font-size: 15px; font-weight: bold; color: #000;} */
 
 
 
