@@ -261,13 +261,7 @@
 			</ul>
 		</div>
 	</div>
-	
-	<!-------------------------------------------------------------->
-				</div>
-			</div>
-			<!-- 팝업 footer -->
-			<div class="btns col1"><button data-remodal-action="confirm" onclick="fnRecpCan();" class="btnL btn_orange">예매취소</button></div>
-		</form>
 	</div>
+</div>
 </body>
 </html>

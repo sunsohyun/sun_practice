@@ -218,10 +218,10 @@
 					</ul>
 				</div>
 				<p class="btns multi mainclfix col4">
-					<a href="#" onclick="fnmrsChangeTime(0);" class="btnL btn_cancel">시간변경</a>
+					<a href="http://localhost:9000/practice_sun/reservationlist/reservation_update.jsp" onclick="fnmrsChangeTime(0);" class="btnL btn_cancel">시간변경</a>
 					<a href="http://localhost:9000/practice_sun/reservationlist/reservation_receipt.jsp" target="_blank" onclick="fnmrsRecpPub(0);" class="btnL btn_cancel">영수증 발행</a>
 					<a href="#" onclick="fnRecpCanInfo(0,'');" class="btnL btn_cancel">예매취소</a>
-					<a href="#" onclick="fnmrsHtcklayer(0);" class="btnL btn_confirm">홈티켓 발행</a>
+					<a href="http://localhost:9000/practice_sun/reservationlist/reservation_hometicket.jsp" onclick="fnmrsHtcklayer(0);" class="btnL btn_confirm">홈티켓 발행</a>
 				</p>
 				<ul class="desc_list marT30">
 					<li>과거 예매 내역은 출발일 날짜 기준 당일까지, 예매 취소 내역은 과거 3개월까지 조회 가능합니다.</li>
@@ -297,7 +297,7 @@
 		</ul>
 	</div>
 	<!------------------------ 취소버튼 클릭시 나오는 팝업창 ---------------------------->
-	<div style="display: none; class="remodal w680 popTicket_cancel remodal-is-initialized remodal-is-opened" id="popTicketCancel" role="dialog" tabindex="-1">
+	<div style="display: none;" class="remodal w680 popTicket_cancel remodal-is-initialized remodal-is-opened" id="popTicketCancel" role="dialog" tabindex="-1">
 	<form id="mrsRecpCanFrm" name="mrsRecpCanFrm" action="/mrs/mrstckcaninfo.ajax">
 		<input type="hidden" name="nonMbrsNo" id="nonMbrsNo" value="">
 		<input type="hidden" name="mrsMrnpNo" id="mrsMrnpNo" value="20230508709439">
